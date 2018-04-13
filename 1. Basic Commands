@@ -1,0 +1,39 @@
+* Basic Commands
+-----------------
+-> Windows - GUI, CLI
+-> Linux -> CLI (Command Line Interpreter - Shell and the language used to interact with the shell is called Bash);
+
+-> In windows filesystems are assigned to drive letters -> C:, D:, or X:.
+-> Each drive letter is a filesystem;
+-> Root directory of C: -> C:\ , D: -> D:\ , X: -> X:\;
+-> Subdirectories are separated by backslashes (\), in Linux (/) forward slashes;
+
+-> Size V/v Size on disk:
+The Size on disk measurement is more complicated. 
+
+If the drive supports compression (as reported by the FILE_FILE_COMPRESSION flag returned by the Get­Volume­Information function) and the file is compressed or sparse (FILE_ATTRIBUTE_COMPRESSED, FILE_ATTRIBUTE_SPARSE_FILE), then the Size on disk for a file is the value reported by the Get­Compressed­File­Size function. 
+
+This reports the compressed size of the file (if compressed) or the size of the file minus the parts that were de-committed and logically treated as zero (if sparse). If the file is neither compressed nor sparse, then the Size on disk is the file size reported by the Find­First­File function rounded up to the nearest cluster.
+---------------------------------------------------------------------------------------------------------------------------------------
+* Various Command Line Interfaces on Windows:
+---------------------------------------------
+1. Command Prompt: cmd.exe
+2. PowerShell: powershell.exe
+
+c.1 ls C:\            -> lists contents of C: 
+c.2 Get-Help ls       -> brief summary of the command parameters;
+c.3 Get-Help ls -Full -> description of each parameter and examples of how to use the command;
+c.4 ls -Force C:\     -> lists hidden directories;
+---------------------------------------------------------------------------------------------------------------------------------------
+* Command Line Interface on Linux:
+-----------------------------------
+-> Linux Main directory - Root directory - / (ForwardSlash);
+* Flag is a way to specify additional options for a command;
+
+c.1 ls /
+c.2 ls --help
+c.3 man ls (manual pages - for more information)
+c.4 ls -l (detailed information of the folders in a formatted long list)
+(file information - no of links the file has - file owner - file group - file size - timestamp - file/directory name);
+c.5 ls -la (all files displayed even hidden);
+---------------------------------------------------------------------------------------------------------------------------------------
