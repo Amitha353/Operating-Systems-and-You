@@ -20,20 +20,99 @@ This reports the compressed size of the file (if compressed) or the size of the 
 1. Command Prompt: cmd.exe
 2. PowerShell: powershell.exe
 
-c.1 ls C:\            -> lists contents of C: 
-c.2 Get-Help ls       -> brief summary of the command parameters;
-c.3 Get-Help ls -Full -> description of each parameter and examples of how to use the command;
-c.4 ls -Force C:\     -> lists hidden directories;
+cw.1 ls C:\            -> lists contents of C: 
+cw.2 Get-Help ls       -> brief summary of the command parameters;
+cw.3 Get-Help ls -Full -> description of each parameter and examples of how to use the command;
+cw.4 ls -Force C:\     -> lists hidden directories;
 ---------------------------------------------------------------------------------------------------------------------------------------
 * Command Line Interface on Linux:
 -----------------------------------
 -> Linux Main directory - Root directory - / (ForwardSlash);
 * Flag is a way to specify additional options for a command;
 
-c.1 ls /
-c.2 ls --help
-c.3 man ls (manual pages - for more information)
-c.4 ls -l (detailed information of the folders in a formatted long list)
+cl.1 ls /
+cl.2 ls --help
+cl.3 man ls (manual pages - for more information)
+cl.4 ls -l (detailed information of the folders in a formatted long list)
 (file information - no of links the file has - file owner - file group - file size - timestamp - file/directory name);
-c.5 ls -la (all files displayed even hidden);
+cl.5 ls -la (all files displayed even hidden);
+---------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Changing Directories
+--------------------------------
+-> Absolute path - starts from main directory;
+-> Relative path - starts from current directory;
+
+cw.5 -> cd (change directories);
+cw.6 -> cd .. (one level up folder);
+cw.7 -> pwd (print working directory);
+cw.8 -> cd ..\Desktop
+cw.9 -> cd ~ (path of home directory);
+cw.10 -> cd ~\Desktop
+
+Tab completion;
+----------------------------------------------------
+* Linux: Changing Directories
+------------------------------
+cl.6 -> cd .. (one level up folder);
+cl.7 -> pwd (print working directory);
+cl.8 -> cd ..\Desktop
+cl.9 -> cd ~ (path of home directory);
+cl.10 -> cd ~\Desktop
+---------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Making Directories
+--------------------------------
+- mkdir <foldername> | mkdir my` cool` folder | mkdir 'my cool folder'
+-----------------------------------
+* Linux: Making Directories
+--------------------------------
+- mkdir <foldername> | mkdir my\ cool\ folder | mkdir 'my cool folder'
+---------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Command History
+--------------------------------
+cw.11  history | Ctrl+R
+cw.12 clear
+----------------------------------------------------------
+* Linux: Command History
+--------------------------------
+- cl.11 history | Ctrl+R
+- cl.12 clear
+---------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Copying File and Directories
+------------------------------------------
+cw.13 cp <source file> <destination path> 
+cw.14 cp *.jpg ~<path> (copy all the jpeg files.) (wildcard - * select similar files);
+cw.15 cp <directory name> <destination path> (copies the directory name but not the contents);
+cw.16 cp <directory name> <destination path> -Recurse -Verbose (copies the directories and content);
+-------------------------------------------------
+* Linux: Copying File and Directories
+------------------------------------------
+cl.13 cp <source file> <destination path> 
+cl.14 cp *.png ~/Desktop (copy all the jpeg files.)
+cl.15 cp <directory name> <destination path> (copies the directory name but not the contents);
+cl.16 cp -r -v <directory name> <destination path>
+---------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Moving and Renaming Files
+------------------------------------------
+cw.17 mv <file-name> <another-name> mv bluedoc.txt yellowdoc.txt
+cw.18 mv yellowdoc.txt <new directory>
+cw.19 mv *_doc.txt ~\Document
+-------------------------------------------------------
+* Linux: Copying File and Directories
+------------------------------------------
+cl.17 mv <file-name> <another-name> mv bluedoc.txt yellowdoc.txt (rename)
+cl.18 mv yellowdoc.txt <new directory> (moved into directory)
+cl.19 mv *_doc.txt ~\Document (ls Desktop)
+---------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Removing Files and Directories
+------------------------------------------
+In powershell - removed files are removed from recycle bin;
+cw.20 rm <filename>
+cw.21 rm <filename> -Force (removes files)
+cw.22 rm <directoryname> -Recurse
+-------------------------------------------------------
+* Linux: Removing Files and Directories
+------------------------------------------
+cl.20 rm <filename>
+cl.21 rm <filename> -Force (removes files)
+cl.22 rm -r <directoryname>
 ---------------------------------------------------------------------------------------------------------------------------------------
