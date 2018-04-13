@@ -60,7 +60,7 @@ Three different streams - standard in, standard out, standard error;
 < stdin
 > stdout
 2> stderr
->> prevent override
+>> prevent override , appends the data;
 | from one output to another input
 
 * echo woof > dog.txt
