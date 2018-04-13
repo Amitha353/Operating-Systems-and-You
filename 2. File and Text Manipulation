@@ -49,9 +49,39 @@ cw.9 redirection >
 cat words.txt | Select-String st
 (street, blast, last)
 
+* Send output of one commnad to the input of another command -> Pipe(|)
+
+rm secure_file 2> errors.txt (1-> stdout, 2-> stderr - here error stream output is redirected into errors.txt);
+rm secure_file 2> $null ($null - nothing);
 --------------------------------------------------------------------
-* Linux: Modifying Text Files
-----------------------------------
-cl.5 nano <filename>
-other editors - Nano / Vim / Emacs
+* Linux: Input, Output and Pipe
+--------------------------------
+Three different streams - standard in, standard out, standard error;
+< stdin
+> stdout
+2> stderr
+>> prevent override
+| from one output to another input
+
+* echo woof > dog.txt
+
+* cat dog.txt     [woof]
+
+* echo woof >> dog.txt   
+
+* cat dog.txt     [woof
+                 woof]
+
+* std in from files 
+-> cat < file_input.txt
+
+* ls /di/dir 2> error_output.txt
+
+* cat error_output.tx
+
+* ls /di/dir 2> /dev/null      {/dev/null -> $null}
+
+* cat error_output.tx
+
+* ls -la /etc | grep bluetooth
 ----------------------------------------------------------------------------------------------------------------------------------------
