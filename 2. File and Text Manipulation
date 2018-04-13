@@ -1,0 +1,57 @@
+* Windows: Display File Contents
+----------------------------------
+cw.1 cat file_name (cat - concatenate diaplys file information);(whole content is dumped at a time)
+cw.2 more fimename (displays one page at a time); (enter - advance by 1 line; space -> advance by 1 page; q - quit);
+cw.3 cat filename -Head 10 (only the header glimpse)
+cw.4 cat filename -Tail 10 (last 10 lines)
+--------------------------------------------------------------------
+* Linux: Display File Contents
+----------------------------------
+cl.1 cat file_name (cat - concatenate diaplys file information);(whole content is dumped at a time)
+cl.2 less fimename (displays one page at a time); (up and down keys; g -> begining of file; G -> end of file; /word_serach - search for word or phrase; / q - quit);
+cl.3 head filename (only the header 10 glimpse)
+cl.4 tail filename (last 10 lines)
+------------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Modifying Text Files
+----------------------------------
+cw.5 start notepad++ <filename>
+--------------------------------------------------------------------
+* Linux: Modifying Text Files
+----------------------------------
+cl.5 nano <filename>
+other editors - Nano / Vim / Emacs
+----------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Searching within Text Files
+-----------------------------------------
+GUI -> Start Menu -> Indexing Options -> Use the location -> advance -> File Type -> Index Properties and File Contents
+CLI -> cw.6 -> Select-String <filename(s)>
+
+* Windows: Searching within Text Directories
+--------------------------------------------
+CLI -> cw.7 -> ls <directory> -Recurse -Filter *.<pattern/exe>
+--------------------------------------------------------------------
+* Linux: Searching within Text Files
+--------------------------------------
+cl.6 grep <search word> <filename>
+cl.7 grep <serach word> *_filenames.xtx
+----------------------------------------------------------------------------------------------------------------------------------------
+* Windows: Input, Output and Pipeline
+--------------------------------------
+Each process in windows has three different streams - standard in, standard out, standard error;
+
+cw.8 echo woof > dog.txt (echo -> alias for Write-Output)
+cw.9 redirection >
+- Get-Help about-redirection
+
+* cat words.txt
+(street, tree, blast, last)
+
+cat words.txt | Select-String st
+(street, blast, last)
+
+--------------------------------------------------------------------
+* Linux: Modifying Text Files
+----------------------------------
+cl.5 nano <filename>
+other editors - Nano / Vim / Emacs
+----------------------------------------------------------------------------------------------------------------------------------------
