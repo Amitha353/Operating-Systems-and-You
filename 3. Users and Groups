@@ -1,0 +1,28 @@
+* Users, Administrators, and Groups
+------------------------------------
+Two types of users
+a. Standard Users - user is someone who's given restricted access to a machine.
+b. Administrators - user has complete control over the machine.
+
+Users are put into groups according to level of access and permissions to carryout certain tasks;
+-------------------------------------------------------------------------------------------------------------------------------------------
+Windows: View User and Group Information
+-----------------------------------------
+-> Start - Computer Management
+-> Top left side bar -> Computer Management (Local) - managing a single machine locally;
+  -> System Tools
+    a. Task Scheduler - Lets to schedule programs and tasks to run at certain times.
+    b. Event Viewer - The system stores the system logs.
+    c. Shared Folders - Shows folders that different machines share with each other.
+    d. Local Users and Groups - Users and Group Management.
+    e. Performance - Shows monitoring for the resources of the machine like CPU and RAM.
+    f. Device Manager - Manage devices on the computer like network cards, sound cards, monitors and etc;
+  -> Storage
+    a. Disk Management 
+  -> Services and Applications - shows the program services that are available on the system. (can enable or disable services.)
+  
+-> In enterprise environment multiple machines can be handled in a domain.
+-> Windows Domain - A network of computers, users, files, etc that are added to a central database.
+
+* UAC (User Access Control) - A feature in Windows that prevents unauthorized changes to a system.
+-------------------------------------------------------------------------------------------------------------------------------------------
